@@ -235,13 +235,13 @@ longitudes = [rio.longitud for rio in rios if rio.continente == continente]
 longitud_media = None
 if len(longitudes)>0:
     longitud_media = sum(longitudes)/len(longitudes)
-print(f"Longitud media de los ríos de Asia: {longitud_media)}")
+print(f"Longitud media de los ríos de Asia: {longitud_media}")
 ```
 Aunque la media también se puede calcular usando la función `means` del paquete `statistics`(recuerde que debe importar este paquete). La diferencia de `means` con la implementación anterior es que en caso de que no se pueda calcular la media, en lugar de devolver `None`, eleva la excepción `StatisticsError`.
 
 ```python
 longitud_media=statistics.mean (rio.longitud for rio in rios if rio.continente == continente)  
-print(f"Longitud media de los ríos de Asia: {longitud_media)}")
+print(f"Longitud media de los ríos de Asia: {longitud_media}")
 ```
 ## Ejercicio
 
